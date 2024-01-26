@@ -1,0 +1,12 @@
+.star-rating {
+    display: flex;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media  (max-width: 200px) {
+    font-size: 0.8rem;
+}
+.star-rating .active {
+    color: gold;
+}
