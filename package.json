@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "format": "../node_modules/.bin/prettier --write \\\"src/**/*.{js,jsx,css}\\\"",
-    "dev": "../node_modules/.bin/vite",
-    "build": "../node_modules/.bin/vite build",
-    "lint": "../node_modules/.bin/eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "../node_modules/.bin/vite preview"
+    "format": "node_modules/.bin/prettier --write \\\\\\\"src/**/*.{js,jsx,css}\\\\\\\"",
+    "dev": "vite",
+    "build": "node_modules/.bin/vite build",
+    "lint": "node_modules/.bin/eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "node_modules/.bin/vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -32,7 +32,7 @@
     "react-hook-form-resolvers": "^0.0.1",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.2",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-toast-notification": "^1.1.4",
     "react-toast-notifications": "^2.5.1",
     "react-toastify": "^10.0.4",
