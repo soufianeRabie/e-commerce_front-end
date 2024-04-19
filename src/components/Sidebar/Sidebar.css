@@ -1,0 +1,20 @@
+.sidebar {
+ height: 500px;
+    overflow: auto;
+}
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 256px; /* Adjust the width as needed */
+    height: 100vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Add scroll if content exceeds height */
+    z-index: 3; /* Ensure the sidebar appears above other content */
+}
+.logo-container {
+    margin-bottom: 4rem;
+}
+
+.logo-container h1 {
+    margin-top: 1.3rem;
+}
