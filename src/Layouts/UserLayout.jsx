@@ -156,12 +156,8 @@ function UserLayout() {
                   handleLogout={handleLogout}
                 />
               </div>
-              <button onClick={() => navigate('/')} className={'text-white'}>
-                <AmazoneLogo
-                  width={'100px'}
-                  height={'30px'}
-                  color={'#000aa3'}
-                />
+              <button onClick={() => navigate('/')} className={''}>
+                <div>SRKING👑</div>
               </button>
             </div>
             <div className="hidden sm:block">

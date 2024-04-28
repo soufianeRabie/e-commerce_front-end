@@ -80,7 +80,6 @@ export const Register = () => {
       <div>
         <h1 className={'text-3xl center '}>Register Page </h1>
       </div>
-      {JSON.stringify(form.formState.errors)}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <div className={'mt-4'}>
@@ -123,7 +122,7 @@ export const Register = () => {
                 <FormItem>
                   <FormLabel>Email Address</FormLabel>
                   <FormControl>
-                    <Input placeholder="shadcn" {...field} />
+                    <Input placeholder="email" {...field} />
                   </FormControl>
                   {errors?.email && (
                     <span className={'text-sm text-red-600'}>
@@ -217,9 +216,8 @@ export const Register = () => {
             {isLoading ? (
               <Loader className={'animate-spin'} />
             ) : (
-              <span>Submit</span>
+              <span>sign up</span>
             )}
-            )
           </Button>
         </form>
       </Form>

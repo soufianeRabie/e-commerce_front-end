@@ -14,6 +14,7 @@ import { ApiServices } from '../../services/axiosServices.js'
 import { ToastContainer } from 'react-toastify'
 import Loading from '../Loadings/Loading.jsx'
 import {GlobalColorTailwand} from "../../Library/Library.jsx";
+import {SimpleCardCheckout} from "../UserAndGuest/Checkout/SimpleCardCheckout.jsx";
 
 function Payment() {
   const { basket, user, dispatch, products } = useAuth()
@@ -105,7 +106,7 @@ function Payment() {
         <div className={' w-full'}>
           {basket.length > 0 ? (
             <>
-              <div> {displayProduct(basket, null, products)}</div>
+                <SimpleCardCheckout basket={basket} products={products}/>
               <div
                 className={
                   'flex border border-gray-600 shadow-md m-3 flex-wrap sm:flex-nowrap px-20'
@@ -139,7 +140,7 @@ function Payment() {
 
                     <button
                       className={
-                        `bg${GlobalColorTailwand} cursor-pointer text-white rounded-md w-full py-2 my-2`
+                        ` cursor-pointer rounded-md w-full py-2 my-2`
                       }
                       type={'submit'}
                       disabled={  processing || succeded || disabled}

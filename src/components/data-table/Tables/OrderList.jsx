@@ -117,7 +117,7 @@ export default function OrderList({ SpecifiqueOders: SpecifiqueOdersId }) {
     {
       id: 'actions',
       cell: ({ row }) => {
-        const { id, email, status, deliveriesId, product_id } = row.original
+        const { id, email, status, deliveriesId, product_id  , payment_method} = row.original
 
         const complaintRef = useRef()
         return (
@@ -261,7 +261,7 @@ export default function OrderList({ SpecifiqueOders: SpecifiqueOdersId }) {
                             const response = await ApiServices.makeComplaint({
                               user_id: user?.id,
                               message: complaint,
-                              type: 'order',
+                              type: payment_method,
                               orderId: id,
                             })
                             if (response.status === 200) {

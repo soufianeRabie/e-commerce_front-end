@@ -151,7 +151,7 @@ function Login() {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   className={
-                    ' h-10  px-3 rounded-xl w-full p-1 border border-gray-900'
+                    ' h-10  px-3 dark:text-black rounded-xl w-full p-1 border border-gray-900'
                   }
                   type="email"
                   name={'email'}
@@ -168,7 +168,7 @@ function Login() {
                 <input
                   onChange={(e) => setPassword(e.target.value)}
                   className={
-                    ' h-10 px-3 rounded-xl w-full border border-gray-900'
+                    ' h-10 dark:text-black px-3 rounded-xl w-full border border-gray-900'
                   }
                   type="password"
                   name={'password'}
