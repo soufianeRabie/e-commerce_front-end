@@ -88,8 +88,7 @@ export const ApiServices = {
         Authorization: `Bearer ${token}`,
       },
     }
-
-    // Use the FormData directly as the second parameter
+    // using method post
     return await axiosConfig.post(
       `editProduct/${formData.get('id')}`,
       formData,

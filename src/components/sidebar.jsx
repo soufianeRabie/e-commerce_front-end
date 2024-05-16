@@ -63,12 +63,12 @@ export default function Sidebar2({ className, isCollapsed, setIsCollapsed }) {
                 strokeLinejoin="round"
                 strokeWidth="16"
               ></line>
-              <span className="sr-only">soufiane shop</span>
+              <span className="sr-only">SOUFIANE RABYA</span>
             </svg>
             <div
               className={`flex flex-col justify-end truncate ${isCollapsed ? 'invisible w-0' : 'visible w-auto'}`}
             >
-              <span className="font-medium">soufiane shop  Admin</span>
+              <span className="font-medium">ISTICG BERRECHID</span>
               <span className="text-xs">SRKING👑</span>
             </div>
           </div>

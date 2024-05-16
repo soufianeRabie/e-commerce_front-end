@@ -107,7 +107,7 @@ const router = createBrowserRouter([
   //       path: '/admin/orders',
   //       element: (
   //         <ProtectedRoute>
-  //           <OrderList />
+  //           <TrainerList />
   //         </ProtectedRoute>
   //       ),
   //     },
@@ -115,7 +115,7 @@ const router = createBrowserRouter([
   //       path: '/admin/deliveries',
   //       element: (
   //         <ProtectedRoute>
-  //           <DeliveryList />
+  //           <RoomsList />
   //         </ProtectedRoute>
   //       ),
   //     },
@@ -131,7 +131,7 @@ const router = createBrowserRouter([
   //       path: '/admin/delivery/:id',
   //       element: (
   //         <ProtectedRoute>
-  //           <DeliveryOfAnOrder />
+  //           <TrainerList />
   //         </ProtectedRoute>
   //       ),
   //     },
@@ -139,7 +139,7 @@ const router = createBrowserRouter([
   //       path: '/admin/complaints',
   //       element: (
   //         <ProtectedRoute>
-  //           <ComplaintsList />
+  //           <GroupList />
   //         </ProtectedRoute>
   //       ),
   //     },
