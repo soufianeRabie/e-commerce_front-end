@@ -69,7 +69,7 @@ export const ToTalPriceCard = ({ basket, user, tPrice, Discount }) => {
 
             <Popover>
               <PopoverTrigger className={'w-32'}>
-                <Button className={'w-full'} variant={''}>
+                <Button  className={'w-full bg-red-600 hover:bg-red-800'} variant={''}>
                   Buy Now
                 </Button>
               </PopoverTrigger>
@@ -77,10 +77,10 @@ export const ToTalPriceCard = ({ basket, user, tPrice, Discount }) => {
                 <div className={'flex gap-1'}>
                   {' '}
                   <Link to={'/delivery'}>
-                    <Button> Cash on Delivery</Button>
+                    <Button className={ "bg-red-600 hover:bg-red-800"}> Cash on Delivery</Button>
                   </Link>
                   <Link to={'/payment'}>
-                    <Button> Payment Online</Button>
+                    <Button className={ "bg-red-600 hover:bg-red-800"}> Payment Online</Button>
                   </Link>
                 </div>
               </PopoverContent>

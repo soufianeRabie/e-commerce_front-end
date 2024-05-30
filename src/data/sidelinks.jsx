@@ -29,7 +29,7 @@ export const sidelinks = [
   },
   {
     title: 'Add Product',
-    label: '3',
+    label: '',
     href: 'addProduct',
     icon: <IconChecklist size={18} />,
   },

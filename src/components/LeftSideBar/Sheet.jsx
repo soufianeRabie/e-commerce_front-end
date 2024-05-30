@@ -9,13 +9,15 @@ import {
 } from '../../components/ui/sheet'
 import { LeftSideBar } from './LeftSideBar.jsx'
 
+import logo from "../../assets/images/logo.png"
+
 export const LeftSide = ({ name, user, handleLogout, className }) => {
   return (
     <Sheet>
       <SheetTrigger className={''}>{name}</SheetTrigger>
       <SheetContent side={'left'}>
         <SheetHeader>
-            <SheetTitle> <span className={'my-10 block'}>SR.KING👑</span></SheetTitle>
+            <SheetTitle > <div style={{display:"flex",justifyContent:'center'}}><img  src={logo}  style={{width:"130px",height:"130px"}}/></div></SheetTitle>
 
             <SheetDescription>
                 welcome we hope you be great today

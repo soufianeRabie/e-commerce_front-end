@@ -5,7 +5,7 @@ import { Button } from './custom/button'
 import Nav from './nav.jsx'
 import { cn } from '@/lib/utils'
 import { sidelinks } from '../data/sidelinks'
-
+import logo from '../assets/images/logo.png'
 export default function Sidebar2({ className, isCollapsed, setIsCollapsed }) {
   const [navOpened, setNavOpened] = useState(false)
 
@@ -63,13 +63,13 @@ export default function Sidebar2({ className, isCollapsed, setIsCollapsed }) {
                 strokeLinejoin="round"
                 strokeWidth="16"
               ></line>
-              <span className="sr-only">soufiane shop</span>
+              <span className="sr-only">REBELLION GAMING </span>
             </svg>
             <div
               className={`flex flex-col justify-end truncate ${isCollapsed ? 'invisible w-0' : 'visible w-auto'}`}
             >
-              <span className="font-medium">soufiane shop  Admin</span>
-              <span className="text-xs">SRKING👑</span>
+              <span className="text-xs" style={{display:'flex ',justifyContent:'center'}}><img style={{width:"100px",height:"90px"}} src={logo} /></span>
+              <span className="font-medium">Rebellion gaming Admin</span>
             </div>
           </div>
 

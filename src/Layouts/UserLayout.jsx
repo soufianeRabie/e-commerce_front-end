@@ -20,6 +20,8 @@ import { NavigationMenuDemo } from './NavigationMenu.jsx'
 import { UserNavigationMenu } from '../Library/NavigationMenu.jsx'
 import { useGetUserOrders } from '../components/Hooks/useGetUserOrders.js'
 
+import logo from "../assets/images/logo.png"
+
 function UserLayout() {
   const { user, basket, dispatch, products, logout } = useAuth()
   const navigate = useNavigate()
@@ -141,7 +143,7 @@ function UserLayout() {
 
   return (
     <>
-      <div className="fixed z-20 max-h-52 bg-white dark:bg-slate-900 bg-opacity-70 dark:bg-opacity-90 dark:backdrop-blur-md dark:shadow-xl shadow-md backdrop-blur-md w-full text-gray-900 p-4 ">
+      <div className="fixed z-20 max-h-52 bg-white dark:bg-slate-900 bg-opacity-70 dark:bg-opacity-90 dark:backdrop-blur-md dark:shadow-xl shadow-md backdrop-blur-md w-full text-gray-900  ">
         <div className="container w-full sm:w-4/5 mx-auto flex items-center justify-between">
           <div className="flex items-center">
             <div className="mr-3 flex gap-1">
@@ -149,7 +151,7 @@ function UserLayout() {
                 <LeftSide
                   name={
                     <AlignJustify
-                      className={'text-slate-900 dark:text-white'}
+                      className={'text-red-600 dark:text-white mt-9'}
                     />
                   }
                   user={user}
@@ -157,7 +159,7 @@ function UserLayout() {
                 />
               </div>
               <button onClick={() => navigate('/')} className={''}>
-                <div>SRKING👑</div>
+                <img  src={logo}  style={{width:"130px"}}/>
               </button>
             </div>
             <div className="hidden sm:block">

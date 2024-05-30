@@ -16,8 +16,8 @@ export const Shet = ({handleChangeCat , handleFilter}) => {
 
     return (
     <Sheet >
-      <SheetTrigger className={"bg-blue-700 p-3 rounded-xl"}><HiAdjustments className={'inline-block  text-red-600'}/> filter </SheetTrigger>
-      <SheetContent side={'bottom'}>
+      <SheetTrigger className={"bg-red-600 p-3 rounded-xl text-white" }><HiAdjustments className={'inline-block  text-white'}/> filter </SheetTrigger>
+      <SheetContent side={'bottom'} className={"text-3xl"}>
         <SheetHeader>
           <SheetTitle></SheetTitle>Filter as you like
           <SheetDescription>

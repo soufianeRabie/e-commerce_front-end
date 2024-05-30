@@ -123,9 +123,6 @@ const ProductCardDetails = () => {
           {/* ABOUT */}
           <div className="flex flex-col gap-4 lg:w-2/4">
             <div>
-              <span className=" text-violet-600 font-semibold">
-                Special Sneaker
-              </span>
               <h1 className="text-3xl font-bold"> {product?.title}</h1>
             </div>
             <p className="text-gray-700">{product?.description}</p>
@@ -148,7 +145,7 @@ const ProductCardDetails = () => {
               </div>
               <button
                 onClick={handleAddToBasket}
-                className="bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full"
+                className="bg-red-600 hover:bg-red-800 text-white font-semibold py-3 px-16 rounded-xl h-full"
               >
                 Add to Cart
               </button>

@@ -70,7 +70,7 @@ export function NavigationMenuDemo({components}) {
             <ul className="grid w-[300px] gap-3 p-4 md:grid-col ">
               {components.map((component , key) => (
                 <ListItem key={key}
-                  key={component.title}
+                  
                   title={component.title}
                   href={component.href}
                 ></ListItem>

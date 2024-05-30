@@ -37,10 +37,9 @@ const Sidebar = ({ filter }) => {
         <div className="logo-container">
           <h1>🛒</h1>
         </div>
-        <Category handleChange={handleChangeCat} />
         <Price handleChange={handleChangePrice} />
-        <Button onClick={handleFilter} variant={'outline'}>
-          <SheetClose> Filter</SheetClose>
+        <Button  onClick={handleFilter} variant={'outline'}  >
+          <SheetClose > Filter</SheetClose>
         </Button>
       </section>
     </div>

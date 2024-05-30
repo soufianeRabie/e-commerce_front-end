@@ -132,9 +132,10 @@ function ProductCard({
             type="text"
             name="quantity"
             id={`quantity ${id}`}
-            placeholder={'...'}
+            placeholder={'Qt'}
             className={'w-10 rounded-xl mx-1'}
             ref={quantityRef}
+            style={{border:'2px solid black'}}
           />
           <div
             onClick={handleAddToBasket}
